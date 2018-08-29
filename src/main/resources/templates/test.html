@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+    <meta name="author" content="Coderthemes">
+
+
+</head>
+
+<body >
+
+<input id="de" type="button" value="按钮"/>
+<input id="name" name="name" type="text" value="扫码输入"/>
+
+<ul>
+
+
+</ul>
+
+
+
+<!-- 新 Bootstrap4 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<!--<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>-->
+
+<!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+<script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+
+<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+<!--<script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>-->
+<script src="js/scripts/jquery.min.js"></script>
+<script src="js/scripts/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+
+
+$("#de").click(function () {
+    $.get("index3", { name: "John", time: "2pm" },
+        function(data){
+           if(data!=null && data=="sucess"){
+               $("#name").focus();
+               //失去焦点
+               var str="<li>wwwww</li><br>";
+
+
+           }else{
+               alert("shib")
+           }
+        });
+})
+
+$("#name").change(function () {
+    var zhi= $("#name").val();
+    var ival = parseInt(zhi);
+    if(zhi.length!=5){
+        alert("长度不符合");
+        $("#name").val("");
+        $("#name").focus();
+    }
+    if(isNaN(ival)){
+        alert("不是纯数字");
+        $("#name").val("");
+        $("#name").focus();
+
+    }else {
+        $("li").each(function () {
+            var text = $(this).text();
+            if (zhi == text) {
+                alert("已经存在该卡号");
+                zhi = "";
+            }
+        });
+
+        var li = "<li>" + zhi + "</li>";
+
+        if (zhi != null && zhi != "" && zhi.length == 5) {
+            $("ul").append(li);
+        }
+
+        $("#name").val("");
+
+        $("#name").focus();
+    }
+});
+
+
+</script>
+</body>
+
+
+</html>
