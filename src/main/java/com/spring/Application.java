@@ -3,6 +3,8 @@ package com.spring;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+我是世界的守护者.
+
 @SpringBootApplication
 public class Application {
 
