@@ -69,16 +69,5 @@ public class JSonUtil {
     }
 
 
-    public static void main(String[] args) {
-        JSONObject js = string2JSON("{\"imageUri\":\"16\\/01\\/26\\/278670a1310a4129956c686b23c0f66a\"}");
-        System.out.println(js.get("imageUri"));
-    }
-    public static void main2(String[] args) {
-        JSONObject js = string2JSON("{\"imageUri\":\"16\\/01\\/26\\/278670a1310a4129956c686b23c0f66a\"}");
-        System.out.println(js.get("imageUri"));
-    }
-    public static void main3(String[] args) {
-        JSONObject js = string2JSON("{\"imageUri\":\"16\\/01\\/26\\/278670a1310a4129956c686b23c0f66a\"}");
-        System.out.println(js.get("imageUri"));
-    }
+
 }
