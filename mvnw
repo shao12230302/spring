@@ -27,12 +27,12 @@
 #
 # Optional ENV vars
 # -----------------
-#   M2_HOME - location of maven2's installed home dir
+#   M2_HOME - location of maven2's installed home dir111111111111111111111111111111111111111111111111111
 #   MAVEN_OPTS - parameters passed to the Java VM when running Maven
 #     e.g. to debug Maven itself, use
 #       set MAVEN_OPTS=-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000
 #   MAVEN_SKIP_RC - flag to disable loading of mavenrc files
-# ----------------------------------------------------------------------------
+# ----------------------------------------------------------------------------水电阿达十大爱尚asdasd阿达阿达
 
 if [ -z "$MAVEN_SKIP_RC" ] ; then
 
